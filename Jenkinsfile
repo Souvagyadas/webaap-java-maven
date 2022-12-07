@@ -54,9 +54,9 @@ pipeline {
             }
         }
 */
-          stage('Stage-9 : Deployment - Deploy a Artifact devops-3.0.0-SNAPSHOT.war file to Tomcat Server') { 
+          stage('Stage-9 : Deployment - Deploy a Artifact shop-0.0.1-SNAPSHOT.jar file to Tomcat Server') { 
             steps {
-                sh 'curl -u admin:redhat@123 -T target/**.war "http://20.244.37.36:8080/manager/text/deploy?path=/devops&update=true"'
+                sh 'curl -u admin:redhat@123 -T target/**.jar "http://20.244.37.36:8080/manager/text/deploy?path=/devops&update=true"'
             }
         } 
 
